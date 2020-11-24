@@ -1,0 +1,191 @@
+/*-------------------pages colors------------------*/
+:root {
+  --basic-link-color: #2196f3;
+  --basic-headers-color: #212121;
+  --basic-content-color: #757575;
+  --backgrouns-secondary-color: #2f303a;
+  --primary-background-color: #f5f4fa;
+}
+/*-------------------ALL PAGES PROPERTIES-------------------*/
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+a {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+li {
+  list-style: none;
+}
+/*-------------------logo & footer logo-------------------*/
+.logo {
+  color: #000000;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo span {
+  color: var(--basic-link-color);
+}
+.footer .logo {
+  color: #ffffff;
+}
+/*-------------------navigation-------------------*/
+.link-navigation {
+  color: var(--basic-headers-color);
+}
+.link-navigation:hover {
+  color: var(--basic-link-color);
+}
+.link-navigation:focus {
+  color: var(--basic-link-color);
+}
+.link-adress {
+  color: var(--basic-content-color);
+}
+.link-adress:hover {
+  color: var(--basic-link-color);
+}
+.link-adress:focus {
+  color: var(--basic-link-color);
+}
+.accent.link-navigation {
+  color: var(--basic-link-color);
+}
+/*-------------------buttons-------------------*/
+button {
+  color: var(--basic-headers-color);
+  background-color: #ffffff;
+
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+button.primery {
+  font-weight: 700;
+}
+button:active,
+button:hover,
+button:focus,
+button.primery {
+  color: #ffffff;
+  background-color: var(--basic-link-color);
+}
+/*-------------------footer-------------------*/
+.link-footer {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.link-footer.adress {
+  color: #ffffff;
+}
+.footer {
+  background-color: var(--backgrouns-secondary-color);
+}
+/*-------------------MAIN PROPERTIES-------------------*/
+
+/*-------------------hero-------------------*/
+.hero {
+  color: #ffffff;
+  background-color: var(--backgrouns-secondary-color);
+
+  text-align: center;
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/*-------------------hidden <h2> header-------------------*/
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*-------------------section skills-------------------*/
+.skills h3 {
+  color: var(--basic-headers-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.skills p {
+  color: var(--basic-content-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*-------------------our works & teams sections-------------------*/
+.team {
+  background-color: var(--primary-background-color);
+}
+.section-header {
+  color: var(--basic-headers-color);
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/*-------------------team cards-------------------*/
+.team h3 {
+  color: var(--basic-headers-color);
+
+  font-size: 16px;
+  line-height: 1.18;
+  font-weight: 500;
+}
+.team p {
+  color: var(--basic-content-color);
+
+  font-weight: 400;
+}
+/*-------------------gallery of portfolio.html-------------------*/
+.gallery h2 {
+  color: var(--basic-headers-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.gallery p {
+  color: var(--basic-content-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
