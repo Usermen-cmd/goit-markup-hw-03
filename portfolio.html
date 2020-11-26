@@ -15,26 +15,26 @@
 
 <body>
     <!-- header -->
-    <header>
-        <!-- logo -->
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <nav>
-            <!-- navigation -->
-            <ul>
-                <li><a class="link-navigation" href="./index.html">Студия</a></li>
-                <li><a class="link-navigation accent" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link-navigation" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a class="link-adress" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="link-adress" href="tel:+380961111111">+38 096 111 11 11</a>
-        </div>
-    </header>
+<header class="header">
+    <!--logo-->
+    <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+    <!-- navigation -->
+    <nav>
+        <ul class="navigation">
+            <li><a class="link-navigation" href="./index.html">Студия</a></li>
+            <li><a class="link-navigation accent" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link-navigation" href="">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="adress-container">
+        <a class="link-adress" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="link-adress" href="tel:+380961111111">+38 096 111 11 11</a>
+    </div>
+</header>
     <main>
         <!-- filter buttons -->
         <section class="gallery">
-            <ul>
+            <ul class="buttons-list">
                 <li><button type="button">Все</button></li>
                 <li><button type="button">Веб-сайты</button></li>
                 <li><button type="button">Приложения</button></li>
@@ -44,8 +44,8 @@
             <!-- logical header -->
             <h1 class="visual-hidden">Галерея наших работ</h1>
             <!-- gallery -->
-            <ul>
-                <li>
+            <ul class="gallery-list">
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-1.jpg" alt="Технокряк" width="370"
                             height="294">
                         <h2>Технокряк</h2>
@@ -53,7 +53,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-2.jpg"
                             alt="Постер New Orlean vs Golden Star" width="370" height="294">
                         <h2>Постер New Orlean vs Golden Star</h2>
@@ -61,7 +61,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-3.jpg" alt="Ресторан Seafood" width="370"
                             height="294">
                         <h2>Ресторан Seafood</h2>
@@ -69,7 +69,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-4.jpg" alt="Проект Prime" width="370"
                             height="294">
                         <h2>Проект Prime</h2>
@@ -77,7 +77,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-5.jpg" alt="Проект Boxes" width="370"
                             height="294">
                         <h2>Проект Boxes</h2>
@@ -85,7 +85,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-6.jpg" alt="Inspiration has no Borders"
                             width="370" height="294">
                         <h2>Inspiration has no Borders</h2>
@@ -93,7 +93,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-7.jpg" alt="Издание Limited Edition"
                             width="370" height="294">
                         <h2>Издание Limited Edition</h2>
@@ -101,7 +101,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-8.jpg" alt="Проект LAB" width="370"
                             height="294">
                         <h2>Проект LAB</h2>
@@ -109,7 +109,7 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="gallery-item">
                     <a href="#"><img src="./img/portfolio-gallery/img-gallery-9.jpg" alt="Growing Business" width="370"
                             height="294">
                         <h2>Growing Business</h2>
@@ -120,17 +120,17 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
-        <a class="logo" href="#"><span>Web</span>Studio</a>
-        <address>
-            <ul>
-                <li><a class="link-footer adress" href="https://goo.gl/maps/VGTgKfK2fRm24Gt29">г. Киев, пр-т Леси
-                        Украинки,26</a></li>
-                <li><a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </footer>
+<footer class="footer">
+    <a class="logo" href="#"><span>Web</span>Studio</a>
+    <address class="adress-list">
+        <ul>
+            <li><a class="link-footer adress" href="https://goo.gl/maps/VGTgKfK2fRm24Gt29">г. Киев, пр-т Леси
+                    Украинки,26</a></li>
+            <li><a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+    </address>
+</footer>
 </body>
 
 </html>

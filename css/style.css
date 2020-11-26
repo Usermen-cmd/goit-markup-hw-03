@@ -26,9 +26,24 @@ h3,
 h4,
 h5 {
   font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
-li {
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*-------------------header-------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
 }
 /*-------------------logo & footer logo-------------------*/
 .logo {
@@ -40,14 +55,32 @@ li {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  display: inline-block;
+  margin: 24px 93px 25px 15px;
 }
 .logo span {
   color: var(--basic-link-color);
 }
 .footer .logo {
   color: #ffffff;
+  margin: 0 0 20px 15px;
 }
 /*-------------------navigation-------------------*/
+.navigation {
+  display: flex;
+}
+.navigation li:not(:last-child) {
+  margin-right: 50px;
+}
+.adress-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: 15px;
+}
+.adress-container a:not(:last-child) {
+  margin-right: 50px;
+}
 .link-navigation {
   color: var(--basic-headers-color);
 }
@@ -58,17 +91,15 @@ li {
   color: var(--basic-link-color);
 }
 .link-adress {
+  display: block;
   color: var(--basic-content-color);
 }
-.link-adress:hover {
-  color: var(--basic-link-color);
-}
-.link-adress:focus {
-  color: var(--basic-link-color);
-}
+.link-adress:hover,
+.link-adress:focus,
 .accent.link-navigation {
   color: var(--basic-link-color);
 }
+
 /*-------------------buttons-------------------*/
 button {
   color: var(--basic-headers-color);
@@ -78,9 +109,15 @@ button {
   line-height: 1.62;
   font-weight: 500;
   letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+
+  margin-right: 8px;
 }
 button.primery {
   font-weight: 700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-right: 0;
 }
 button:active,
 button:hover,
@@ -88,6 +125,7 @@ button:focus,
 button.primery {
   color: #ffffff;
   background-color: var(--basic-link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*-------------------footer-------------------*/
 .link-footer {
@@ -98,12 +136,26 @@ button.primery {
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
+
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 9px;
 }
+
 .link-footer.adress {
   color: #ffffff;
 }
 .footer {
   background-color: var(--backgrouns-secondary-color);
+
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0;
+}
+.address-list {
+  display: block;
+  margin-top: 30px;
 }
 /*-------------------MAIN PROPERTIES-------------------*/
 
@@ -113,6 +165,14 @@ button.primery {
   background-color: var(--backgrouns-secondary-color);
 
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: auto;
+  padding: 200px 0;
 }
 .hero h1 {
   font-weight: 900;
@@ -120,6 +180,8 @@ button.primery {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 /*-------------------hidden <h2> header-------------------*/
 .visual-hidden {
@@ -136,6 +198,24 @@ button.primery {
   overflow: hidden;
 }
 /*-------------------section skills-------------------*/
+.skills-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 94px 0;
+}
+.skills-list .skills-item {
+  width: calc((100%-90px) / 4);
+  margin-right: 30px;
+}
+.skills-item:last-child {
+  margin-right: 15px;
+}
+.skills-item:first-child {
+  margin-left: 15px;
+}
+
 .skills h3 {
   color: var(--basic-headers-color);
   font-weight: 700;
@@ -152,8 +232,27 @@ button.primery {
   line-height: 1.71;
 }
 /*-------------------our works & teams sections-------------------*/
+.works,
+.team {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+}
+.work-list,
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 15px 0 15px;
+}
+.team-list .team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team {
   background-color: var(--primary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-header {
   color: var(--basic-headers-color);
@@ -169,11 +268,17 @@ button.primery {
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
 }
 .team p {
   color: var(--basic-content-color);
 
   font-weight: 400;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 /*-------------------gallery of portfolio.html-------------------*/
 .gallery h2 {
@@ -182,10 +287,46 @@ button.primery {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .gallery p {
   color: var(--basic-content-color);
 
   font-size: 16px;
   line-height: 1.87;
+
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
+.gallery {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+.buttons-list {
+  display: flex;
+  justify-content: center;
+}
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 56px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gallery-item {
+  width: 370px;
+  outline: 1px solid #eeeeee;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.gallery-item:nth-child(3n) {
+  margin-right: 0;
+}
+.gallery-item:nth-last-child(-n + 3) {
+  margin-bottom: 94px;
 }
