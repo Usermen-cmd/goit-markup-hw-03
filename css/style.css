@@ -123,6 +123,8 @@ button {
   border-radius: 4px;
 
   margin-right: 8px;
+  padding: 6px 22px;
+  cursor: pointer;
 }
 button.primery {
   font-weight: 700;
