@@ -7,7 +7,7 @@
   --p-color: #757575;
   --secondary-bg-color: #2f303a;
 }
-/* utiliti classes */
+/* utility classes */
 ul,
 li {
   font-family: var(--primery-font);
@@ -58,6 +58,7 @@ button:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 img {
+  max-width: 100%;
   display: block;
 }
 .visual-hidden {
@@ -75,7 +76,6 @@ img {
 }
 /* HEADER */
 .header {
-  padding: 25px 0;
   border-bottom: 1px solid #ececec;
 }
 .container {
@@ -104,6 +104,9 @@ img {
 .navigation-list,
 .addres-list {
   display: flex;
+}
+.navigation-list-item a {
+  padding: 32px 0;
 }
 .navigation-list-item:not(:last-child),
 .addres-list-item:not(:last-child) {
@@ -138,7 +141,7 @@ img {
   background-color: var(--secondary-bg-color);
   padding: 200px 0;
 }
-.hero-paragraph {
+.hero-header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -181,6 +184,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-color);
+  margin-bottom: 10px;
 }
 .skills-item p {
   font-weight: 400;
@@ -235,10 +239,14 @@ img {
   color: var(--p-color);
 }
 .team-item {
+  width: calc((100% - 120) / 4);
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-item img {
   margin-bottom: 30px;
@@ -303,17 +311,18 @@ img {
   padding: 0 24px;
 }
 .portfolio-item img {
-  width: 100%;
   margin-bottom: 20px;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
 }
+.portfolio-item a {
+  padding-bottom: 20px;
+}
 .portfolio-item {
   border: 1px solid #eeeeee;
   width: calc((100% - 60px) / 3);
-  padding-bottom: 20px;
 }
 .portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
